@@ -1,0 +1,3 @@
+This file is outside dir
+Now we are going to edit this file
+Again we edit something
