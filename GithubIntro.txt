@@ -276,3 +276,6 @@ If we want to delete all the changes and want to go to last commmit then we writ
 git checkout -f
 
 It removes all the modified changes and you come to clean state
+
+---------------------------------------------------------------------------
+
