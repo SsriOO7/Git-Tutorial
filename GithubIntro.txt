@@ -270,3 +270,9 @@ git checkout -- FileName.ext
 
 It will undo the changes
 (Commit should not be done)
+---------------------------------------------------------------------------
+If we want to delete all the changes and want to go to last commmit then we write
+
+git checkout -f
+
+It removes all the modified changes and you come to clean state
