@@ -278,4 +278,10 @@ git checkout -f
 It removes all the modified changes and you come to clean state
 
 ---------------------------------------------------------------------------
+Working with remote repository
 
+We have to make a remote. Remote means a website or repository which is on Internet. We are using git there are multiple site.
+
+git remote add origin https://github.com/SsriOO7/GitTutorialDemo.git
+This line means git remote add an url whose name will be origin
+Common practice is to name it origin
