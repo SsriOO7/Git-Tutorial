@@ -1,5 +1,9 @@
 ===========================================================================
 ALWAYS USE "Q" WHEN YOU WANT TO EXIT
+
+If by mistake I delete important file information then to unmodify this file we write 
+
+git checkout -- FileName.ext
 ===========================================================================
 What is Git??
 
@@ -249,3 +253,19 @@ This will make change in repository with meassage
 
 ===========================================================================
 Unstaging and Unmodifying Files in Git
+
+Unstaging a file in git
+with git add . files come in staging area
+If we want to unstage a file then we write
+
+git restore --staged FileName.ext
+
+---------------------------------------------------------------------------
+
+Unmodifying file in git
+If by mistake I delete important file information then to unmodify this file we write 
+
+git checkout -- FileName.ext
+
+It will undo the changes
+(Commit should not be done)
