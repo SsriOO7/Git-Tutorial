@@ -4,6 +4,7 @@ ALWAYS USE "Q" WHEN YOU WANT TO EXIT
 If by mistake I delete important file information then to unmodify this file we write 
 
 git checkout -- FileName.ext
+(Commit should not be done)
 ===========================================================================
 What is Git??
 
