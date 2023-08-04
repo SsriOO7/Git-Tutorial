@@ -284,4 +284,5 @@ We have to make a remote. Remote means a website or repository which is on Inter
 
 git remote add origin https://github.com/SsriOO7/GitTutorialDemo.git
 This line means git remote add an url whose name will be origin
-Common practice is to name it origin
+Common practice is to name it origin, we have to say origin
+
