@@ -331,3 +331,28 @@ To get the list of the branches we use
 git branch
 ---------------------------------------------------------------------------
 Branch by default will not push on github we have to do it ourself.
+
+===========================================================================
+
+Branching and Merging a Production grade project
+
+Keep in mind always commit before changing the branch. Always be in clean state.
+
+Make a new branch trycleanup
+Make some changes in branch then move on to the new step - merging of branch.
+---------------------------------------------------------------------------
+
+To Merge Branch in Git-
+
+> First select master branch
+> Then write git merge trycleanup
+If theres conflict
+> Then a message will pop up about merge conflict i.e difference between master branch and trycleanup branch. You have to select one change between them.
+> You have to accept between current change and incoming change. (In Vscode)
+> If you accept incoming change then it will change in master branch. (In Vscode)
+> git status. It will show "You have unmerged path"
+> git add .
+> git commit -m "We have successfully merged two branches"
+
+How there's conflict in code ?
+When we make some change in master branch and we make change in trycleanup branch then there will be conflict and when have to select between these two.
