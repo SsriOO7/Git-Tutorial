@@ -216,6 +216,9 @@ It gives detail in short form (It does not show us diff and date)
 git log --pretty=full
 It will show author commit message
 
+gitt log -p -1 
+It will show us last commit
+
 ---------------------------------------------------------------------------
 Difference between author and commit?
 
@@ -291,4 +294,10 @@ Common practice is to name it origin, we have to say origin
 
 Setting Alias in Git
 
+Alias means istead of writing big command we use small command. Example
+st for status
 
+If we want to write status as st or use st instead of status in git then first we have to write
+git config --global alias.st status.
+
+We use alias when we run single command multiple time.
