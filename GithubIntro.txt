@@ -307,3 +307,27 @@ We use alias when we run single command multiple times.
 
 Creating and Switching Branches in Git
 
+Creating a new branch from master branch. First you have to write
+
+git checkout -b develop 
+-b means creating a new branch and develop is the name of the branch.
+It does two thing first it make a branch then it will take us to the branch.
+With this now we are in new branch with the name of develop.
+
+First we have to make a new branch then only we should make changes otherwise it will make change in master branch.
+
+---------------------------------------------------------------------------
+
+Switching branch in Git 
+To switch form develop branch to master branch we have to write 
+
+git checkout master 
+
+With this we will be in master branch and there will be no changes in master branch if we had made some change in develop branch. 
+--------------------------------------------------------------------------
+When the file is in gitignore then there will be no changes in the file. We can not do anything.
+--------------------------------------------------------------------------
+To get the list of the branches we use
+git branch
+---------------------------------------------------------------------------
+Branch by default will not push on github we have to do it ourself.
