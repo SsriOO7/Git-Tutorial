@@ -264,6 +264,7 @@ If we want to unstage a file then we write
 
 git restore --staged FileName.ext
 
+"git restore" is dangerous command it will discard all the changes, modified content will match old commit.
 ---------------------------------------------------------------------------
 
 Unmodifying file in git
@@ -300,4 +301,9 @@ st for status
 If we want to write status as st or use st instead of status in git then first we have to write
 git config --global alias.st status.
 
-We use alias when we run single command multiple time.
+We use alias when we run single command multiple times.
+
+===========================================================================
+
+Creating and Switching Branches in Git
+
