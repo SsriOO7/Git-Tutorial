@@ -286,3 +286,9 @@ git remote add origin https://github.com/SsriOO7/GitTutorialDemo.git
 This line means git remote add an url whose name will be origin
 Common practice is to name it origin, we have to say origin
 
+"git push -u origin main" is used to push in remote repository.
+===========================================================================
+
+Setting Alias in Git
+
+
