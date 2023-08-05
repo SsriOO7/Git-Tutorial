@@ -356,3 +356,26 @@ If theres conflict
 
 How there's conflict in code ?
 When we make some change in master branch and we make change in trycleanup branch then there will be conflict and when have to select between these two.
+===========================================================================
+
+Resolve merge conflict and branch management
+
+Merge Conflict-
+Merge conflict means when you try to merge a branch and git can not do so.
+
+"<<<<<<" this symbol is know as conflict resolution marker.
+
+Branch management-
+Commands of branch
+If we want to see the last commit of every branch then we write-
+> git branch -v it also gives "commit hash and commit message".
+
+> git branched --merged
+It show all the branches which you have already merged.
+
+> git branched --no-merged
+It show all the branches which was not merged.
+
+>> Delete a branch
+> git branch -d branchName * NOTE- If you have not merged branch then it will not be deleted instead it will gives error. If its not merged git will think you are accidentally deleting file. 
+ If you want to delete then you have you to write "D" instead of "d".
