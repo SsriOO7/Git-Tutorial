@@ -379,3 +379,13 @@ It show all the branches which was not merged.
 >> Delete a branch
 > git branch -d branchName * NOTE- If you have not merged branch then it will not be deleted instead it will gives error. If its not merged git will think you are accidentally deleting file. 
  If you want to delete then you have you to write "D" instead of "d".
+===========================================================================
+ 
+Branching Workflow
+
+two type of branches 
+> long running branches : the branches which are use for long run. like master branch.
+> topic branches : when new idea come to mind then we make topic branch. This branch run for short term.
+===========================================================================
+
+
