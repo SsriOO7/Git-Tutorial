@@ -1,7 +1,7 @@
 ===========================================================================
 ALWAYS USE "Q" WHEN YOU WANT TO EXIT
 
-If by mistake I delete important file information then to unmodify this file we write 
+If by mistake I delete important file information then to un-modify this file we write
 
 git checkout -- FileName.ext
 (Commit should not be done)
@@ -10,9 +10,9 @@ What is Git??
 
 Git is a distributed version control system,(Keep track of files) i.e everyone has one copy of repo.
 ---------------------------------------------------------------------------
-What is Git bash?? 
+What is Git bash??
 
-Git bash is a termianl which works as unix. We can use git bash as terminal. We can run python with git bash.
+Git bash is a terminal which works as unix. We can use git bash as terminal. We can run python with git bash.
 ----------------------------------------------------------------------
 Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
 
@@ -30,13 +30,13 @@ Git is software for tracking changes in any set of files, usually used for coord
 History of VCS (Version Control System)
 1. First local vcs were introduced
 pros- can track file and rollback
-cons- If you lose your hardisk everything will be lost
+cons- If you lose your hard disk everything will be lost
 2. Centralyzed vcs
-Local server 
+Local server
 pros- anyone can pull or push file
 cons- If server get damaged then you loose all the data
 3. Distributed vcs (If someone pull data there will always be a full backup in the system).
-If you change anything everone will get that data.
+If you change anything everyone will get that data.
 It is same as centralizes vcs but when someone pull any file he gets all the history of the file.
 It pull only source code file and if theres change in file then only the changes will be saved.
 ---------------------------------------------------------------------------
@@ -45,7 +45,7 @@ git save file under .git folder
 ---------------------------------------------------------------------------
 When we use git for the first time we have to give details like email, name etc
 ---------------------------------------------------------------------------
-to do that we have to write 
+to do that we have to write
 set username
 git config --global user.name Shashwat
 set email
@@ -68,25 +68,25 @@ Here are some key points on Git and GitHub:
 - Git and GitHub are not the same thing; Git is the version control system, while GitHub is a hosting platform for Git repositories.
 
 ---------------------------------------------------------------------------
-To get the repo or to find a repo we use command 
+To get the repo or to find a repo we use command
 first init and second cloning.
 ---------------------------------------------------------------------------
 code . command take us to visual studio code
 ls -lart command show us all the hidden folder
 
 ===========================================================================
-We can get under any forlder with the help of cd command in git bash (Terminal program)
+We can get under any folder with the help of cd command in git bash (Terminal program)
 
-> Git Three stage Architecture 
-Local operations 
-1. Working Directory : File which seen in explorer are called working diectory.
+> Git Three stage Architecture
+Local operations
+1. Working Directory : File which seen in explorer are called working directory.
 2. Staging area : Staging area is those set of files which go for snapshot
 3. Git directory (repository) : Git directory is .git directory or hidden folder
 
 ~ working directory >>>(stage file)>>> staging area >>>(commit) >>>Git directory  >>>> (Check out the project)>>>> working directory
 
 ===========================================================================
-Use of Git bash to track 
+Use of Git bash to track
 git status (to check the status of git)
 
 git init (To initialize git or to make your directory a git repository)
@@ -105,7 +105,7 @@ git commit -m (Add better design)
 To delete git repository
 rm -rf .git (rm -rf delete a folder it is a linux command)(.git is folder which contain repository content).
 
-to clone git repository 
+to clone git repository
 git clone (link) FolderName (folderName is the new folder which will be made automatically)
 
 ===========================================================================
@@ -115,7 +115,7 @@ File Status Lifecycle-
 
 ` untracked>>(add the file)>>unmodified>>(edit the file)>>modified>>(stage the file)>>staged>>>>(commit)>>>>unmodified>>>>(remove the file)>>>untracked.
 
-unmodified is a staging area and modified is also a staging area (If there any change in the file it come under modifed area).
+unmodified is a staging area and modified is also a staging area (If there any change in the file it come under modified area).
 
 ===========================================================================
 If we want to ignore file while running status then create a new file with
@@ -130,8 +130,8 @@ To ignore a folder which is inside any folder just write folderName/ in .gitigno
 If you only want to ignore the folder which is not inside any folder or outer folder then write /folderName/ in .gitignore file
 
 ===========================================================================
-git diff command compare working area with staging area 
-like if we change someting earlier and push the file to staging area and again we edit something then git diff come under play
+git diff command compare working area with staging area
+like if we change something earlier and push the file to staging area and again we edit something then git diff come under play
 ---------------------------------------------------------------------------
 $ git diff
 diff --git a/Static/This file outside dir.txt b/Static/This file outside dir.txt
@@ -153,15 +153,15 @@ It tells us in staging area there one file which is removed and add to its worki
 If we want to compare last commit with current staging area theres command for this too
 git diff --staged
 ===========================================================================
-To-do  direct commit i.e skkiping staging area  then we write
+To-do  direct commit i.e skipping staging area  then we write
 
 git commit -a -m "Direct commit"
 This line stage all the tracked file and commit  those files
-But with this unbtracked file does not go to commit.
+But with this untracked file does not go to commit.
 
 ===========================================================================
 Rename a file in git (manually)
-First change the file name 
+First change the file name
 then go to git bash
 
 git status
@@ -170,59 +170,59 @@ git add .
 (With git add . git will know that you change file name)
 git commit -m "We rename file name"
 
-It will 100% of time 
+It will 100% of time
 ---------------------------------------------------------------------------
 Rename file in git
 
 git mv fileName.ext FileRenamed.ext (mv means move command)
-It will change the file name then it will send the fiel to staging area
+It will change the file name then it will send the file to staging area
 ---------------------------------------------------------------------------
 Remove file with the help of git bash
 
 git rm fileName.ext
 It remove file for us then it also stage file
 ---------------------------------------------------------------------------
-We can not ignore the file if it already tracked 
+We can not ignore the file if it already tracked
 First we have to untrack the file by-
 
 git rm --cached fileName.ext
 
 ===========================================================================
-Git log: Viewing and changing commits in Git 
+Git log: Viewing and changing commits in Git
 
-ALWAYS USE "Q" WHEN YOU WANT TO EXIT 
+ALWAYS USE "Q" WHEN YOU WANT TO EXIT
 
 Viewing commits in git
-First we have to clone a git repository 
-copy git repository link then in git bash 
+First we have to clone a git repository
+copy git repository link then in git bash
 
 git clone link folderName
 It will create a folder in local drive where git repository is downloaded
-Then we can see git status or git log 
+Then we can see git status or git log
 ---------------------------------------------------------------------------
 Git log command (IMPORTANT)
 
 git log --stat
-It will give log in very detailed manner 
+It will give log in very detailed manner
 It will tell us the changes in file made by a single person
 It give log in very short
 
 git log --pretty=oneline
 It tells a commit in a single line and it give all the commit information
 
-git log --pretty=short 
+git log --pretty=short
 It gives detail in short form (It does not show us diff and date)
 
 git log --pretty=full
 It will show author commit message
 
-gitt log -p -1 
+git log -p -1
 It will show us last commit
 
 ---------------------------------------------------------------------------
 Difference between author and commit?
 
-Author is the one who made the file and commit is the one who made changes in the file 
+Author is the one who made the file and commit is the one who made changes in the file
 ---------------------------------------------------------------------------
 
 How to make filter in git log ?  (Filter time)
@@ -230,7 +230,7 @@ How to make filter in git log ?  (Filter time)
 git log --since=2.days
 It give log information of previous two days
 
-we can write 
+we can write
 git log --since=2.weeks
 git log --since=2.months
 git log --since=2.years
@@ -253,29 +253,29 @@ write message
 press esc
 Then write :wq
 
-This will make change in repository with meassage
+This will make change in repository with message
 
 ===========================================================================
-Unstaging and Unmodifying Files in Git
+Un-staging and Un-modifying Files in Git
 
-Unstaging a file in git
+Un-staging a file in git
 with git add . files come in staging area
-If we want to unstage a file then we write
+If we want to un-stage a file then we write
 
 git restore --staged FileName.ext
 
 "git restore" is dangerous command it will discard all the changes, modified content will match old commit.
 ---------------------------------------------------------------------------
 
-Unmodifying file in git
-If by mistake I delete important file information then to unmodify this file we write 
+Un-modifying file in git
+If by mistake I delete important file information then to un-modify this file we write
 
 git checkout -- FileName.ext
 
 It will undo the changes
 (Commit should not be done)
 ---------------------------------------------------------------------------
-If we want to delete all the changes and want to go to last commmit then we write
+If we want to delete all the changes and want to go to last commit then we write
 
 git checkout -f
 
@@ -295,7 +295,7 @@ Common practice is to name it origin, we have to say origin
 
 Setting Alias in Git
 
-Alias means istead of writing big command we use small command. Example
+Alias means instead of writing big command we use small command. Example
 st for status
 
 If we want to write status as st or use st instead of status in git then first we have to write
@@ -309,7 +309,7 @@ Creating and Switching Branches in Git
 
 Creating a new branch from master branch. First you have to write
 
-git checkout -b develop 
+git checkout -b develop
 -b means creating a new branch and develop is the name of the branch.
 It does two thing first it make a branch then it will take us to the branch.
 With this now we are in new branch with the name of develop.
@@ -318,12 +318,12 @@ First we have to make a new branch then only we should make changes otherwise it
 
 ---------------------------------------------------------------------------
 
-Switching branch in Git 
-To switch form develop branch to master branch we have to write 
+Switching branch in Git
+To switch form develop branch to master branch we have to write
 
-git checkout master 
+git checkout master
 
-With this we will be in master branch and there will be no changes in master branch if we had made some change in develop branch. 
+With this we will be in master branch and there will be no changes in master branch if we had made some change in develop branch.
 --------------------------------------------------------------------------
 When the file is in gitignore then there will be no changes in the file. We can not do anything.
 --------------------------------------------------------------------------
@@ -377,13 +377,13 @@ It show all the branches which you have already merged.
 It show all the branches which was not merged.
 
 >> Delete a branch
-> git branch -d branchName * NOTE- If you have not merged branch then it will not be deleted instead it will gives error. If its not merged git will think you are accidentally deleting file. 
+> git branch -d branchName * NOTE- If you have not merged branch then it will not be deleted instead it will gives error. If its not merged git will think you are accidentally deleting file.
  If you want to delete then you have you to write "D" instead of "d".
 ===========================================================================
- 
+
 Branching Workflow
 
-two type of branches 
+two type of branches
 > long running branches : the branches which are use for long run. like master branch.
 > topic branches : when new idea come to mind then we make topic branch. This branch run for short term.
 ===========================================================================
