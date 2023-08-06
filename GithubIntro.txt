@@ -388,7 +388,7 @@ two type of branches
 > topic branches : when new idea come to mind then we make topic branch. This branch run for short term.
 ===========================================================================
 
-Pushing git branch to remote repository
+Pushing git branch to remote repository (Server)
 
 First we create a new branch bugfix
 git checkout -b bugfix
@@ -397,6 +397,6 @@ Then change branch with
 git checkout bugfix
 Then push bugfix branch to git
 
-Branch name change
+Branch name change-
 
 git push origin bugfix:mybugfix
