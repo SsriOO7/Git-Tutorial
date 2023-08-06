@@ -390,6 +390,7 @@ two type of branches
 
 Pushing git branch to remote repository (Server)
 
+Push different branch other than main branch in git repository-
 First we create a new branch bugfix
 git checkout -b bugfix
 Then first we push main branch
