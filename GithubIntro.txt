@@ -410,3 +410,8 @@ It will make 3 branches in github repo
 This Syntax means
 We are telling github that bugfix branch which is in computer start tracking to mybugfix branch and push it.
 There will only be 2 branches in my computer but in github repo there will be three branches.
+
+--------------------------------------------------------------
+How to delete remote branches?
+
+git push -d origin branchName
