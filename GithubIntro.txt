@@ -401,3 +401,8 @@ Then push bugfix branch to git
 Branch name change-
 
 git push origin bugfix:mybugfix
+It means made bugfix branch which is here to mybugfix branch in remote.
+It will make 3 branches in github repo
+1. main
+2. bugfix
+3. mybugfix
